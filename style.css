@@ -21,10 +21,14 @@
 }
 
 .stat-box{
-  background:#1b1239;
+  background:#170e2d;
   text-align: center;
   padding:24px;
   border-radius:14px;
+
+
+  
+  
 }
 
 .stat-box h3{
@@ -33,3 +37,52 @@
   font-weight:bold;
 
 }
+/* WHY CHOOSE  SECTION  */
+.grid-container-parent{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "premium"
+    "mobile"
+    "community"
+    "exclusive"
+    "rich";
+
+}
+.cardPremium{
+ grid-area: premium;
+ padding-top: 60px;
+}
+.cardMobile{
+    grid-area: mobile;
+}
+.cardCommunity{
+    grid-area: community;
+}
+.cardExclusive{
+    grid-area: exclusive;
+}
+.cardRich{
+    grid-area: rich;
+}
+.grid-container-parent > div {
+   background: rgba(35, 14, 61, 1);
+  padding: 40px;
+  border-radius: 40px;
+  margin: 7px;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .grid-container-parent {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "premium  mobile     mobile"
+      "premium  community  community"
+      "exclusive exclusive rich";
+  }
+}
+
+
