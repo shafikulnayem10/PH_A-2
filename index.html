@@ -6,11 +6,49 @@
     <title>TechWave Podcast</title>
     <!-- tailwind css cdn -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+     <!-- External CSS -->
+      <link rel="stylesheet" href="./style.css">
+      <!-- font awsonme cdn -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
+<body class="bg-[#1b1239] text-white">
+ <!-- NAVBAR SECTION  START-->
+<nav class=" max-w-7xl mx-auto px-4 lg:px-20 py-4">
+  <div class="grid grid-cols-2 lg:grid-cols-3 items-center">
+    
+    <!-- LOGO -->
+    <h1 class="text-2xl font-bold justify-self-start">
+          Tech<span class="inline-block bg-linear-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Wave</span>
     </h1>
+
+
+
+    <!-- MENU-->
+    <ul class="hidden lg:flex gap-10 text-gray-300 justify-self-center">
+      
+      <li class="hover:text-white cursor-pointer">About</li>
+      <li class="hover:text-white cursor-pointer">Episodes</li>
+      <li class="hover:text-white cursor-pointer">Host</li>
+    </ul>
+
+    
+    <div class="justify-self-end ">
+      <!-- Button  -->
+      <button class="hidden lg:flex items-center gap-2 gradient-btn">
+        Subscribe <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+
+
+      <!-- Hamburger Menu -->
+      <div class="lg:hidden text-2xl cursor-pointer">
+        <img src="./assets/hamburger-menu.png" alt="hamburger menu icon" class="w-6 h-6">
+      </div>
+    </div>
+
+  </div>
+</nav>
+<!--  NAVBAR SECTION  END-->
+
+
 </body>
 </html>
