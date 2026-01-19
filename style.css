@@ -81,6 +81,7 @@
   background-repeat: no-repeat;
   color: white;
   padding: 80px 20px;
+
 }
 
 .footer-inner {
@@ -153,9 +154,12 @@
 
 @media (max-width: 640px) {
   .footer-container {
-    background-size: contain;
+    background-size:contain;
     padding-top: 100px;
     padding-bottom: 100px;
+   
+    
+
   }
 }
 
